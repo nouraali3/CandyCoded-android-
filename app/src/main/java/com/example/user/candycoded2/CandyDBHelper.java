@@ -8,7 +8,6 @@ import android.database.sqlite.SQLiteOpenHelper;
  * Created by user on 10/02/2018.
  */
 
-//todo 2
 
 public class CandyDBHelper extends SQLiteOpenHelper
 {

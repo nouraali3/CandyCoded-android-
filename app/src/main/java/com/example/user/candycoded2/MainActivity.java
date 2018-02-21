@@ -45,7 +45,6 @@ public class MainActivity extends AppCompatActivity {
         // 3) get id of the view we want to display the container, so that we can change its content     => v
         // 4) set the adapter of the view    => v.setAdapter(a)
         final ArrayList<String> candy_list = new ArrayList<>();
-        candy_list.add("Tropical Wave");
         final ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,R.layout.list_item_candy,R.id.text_view_candy,candy_list);
         ListView listView = (ListView) this.findViewById(R.id.list_view_candy);
         listView.setAdapter(adapter);
@@ -79,7 +78,6 @@ public class MainActivity extends AppCompatActivity {
                 for (Candy c : candies) {
                     adapter.add(c.name);
                 }
-                //todo 3
                 addCandiesToDatabase(candies);
             }
 
@@ -109,7 +107,6 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    //todo 4 inserting into database
     private void addCandiesToDatabase(Candy[] candies)
     {
         SQLiteDatabase db = candyDbGHelper.getWritableDatabase();

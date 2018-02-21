@@ -8,6 +8,9 @@ import android.util.Log;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.squareup.picasso.Callback;
+import com.squareup.picasso.Picasso;
+
 public class DetailActivity extends AppCompatActivity {
 
     @Override
@@ -27,9 +30,9 @@ public class DetailActivity extends AppCompatActivity {
         if(intent!= null && intent.hasExtra("candy_image")){
             candyImage=intent.getStringExtra("candy_image");
         }
-        ImageView iv = (ImageView) this.findViewById(R.id.image_view_candy);
-        //todo synchronize project to be able to use Picasso
-        Picasso.with(this).load(candyImage).into(iv);
+//        ImageView iv = (ImageView) this.findViewById(R.id.image_view_candy);
+        //todo : modify image view to be placeholder
+//        Picasso.with(this).load(candyImage).into(iv);
 
         if(intent!= null && intent.hasExtra("candy_price")){
             candyPrice=intent.getStringExtra("candy_price");

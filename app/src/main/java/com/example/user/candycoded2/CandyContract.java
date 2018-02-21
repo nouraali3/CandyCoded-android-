@@ -7,9 +7,6 @@ import android.provider.BaseColumns;
  * it is created to hold string representation of : tables names, columns, creagtion, and deletion
  */
 
-
-//todo 1
-
 public class CandyContract
 {
     public static final String db_name = "  candycoded.db";
